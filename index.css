@@ -1,0 +1,87 @@
+body {
+    background: radial-gradient(circle at center, #0f4c75, #3282b8 50%, #2c698d);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #8B008B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+div {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #0f4c75, #3282b8);
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.buttonClas {
+    all: unset;
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #ff0080, #ff4d00);
+    color: #FFD700; 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid transparent;
+}
+
+.buttonClas:hover {
+    background: linear-gradient(135deg, #ff4d00, #ff0080);
+    color: #FFD700;
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+}
+
+.buttonClas:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FFD700;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    div {
+        padding: 15px;
+    }
+
+    .buttonClas {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
